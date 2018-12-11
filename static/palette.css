@@ -1,0 +1,62 @@
+:root {
+  --cardinal-red: rgba(140,21,21,1);
+  --bright-red: #B1040E;
+  --hover-red: #820000;
+  --fog: rgba(244,244,244,1);
+  --cool-grey: rgba(77,79,83,1);
+  --link: #006CB8;
+  --link-hover: #00548f;
+  --light-sandstone: #fbf6ef;
+  --sandstone: #d2c295;
+  --sandhill: #b3995d;
+  --beige: #9d9573;
+  --stone: #544948;
+  --chocolate: #2f2424;
+  --driftwood: #b6b1a9;
+  --lagunita: #007c92;
+  --sky: #0098db;
+  --light-sage: #c7d1c5;
+
+}
+@font-face {
+  font-family: Source-Black;
+  src: url("fonts/Source_Sans_Pro/SourceSansPro-Black.ttf");
+}
+@font-face {
+  font-family: Source-Regular;
+  src: url("fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: Source-RegularItalic;
+  src: url("fonts/Source_Sans_Pro/SourceSansPro-Italic.ttf");
+}
+
+@font-face {
+  font-family: Source-Light;
+  src: url("fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
+}
+@font-face {
+  font-family: Source-Bold;
+  src: url("fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: Source-SemiBold;
+  src: url("fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
+}
+@font-face {
+  font-family: Source-SemiBoldItalic;
+  src: url("fonts/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: Source-ExtraLight;
+  src: url("fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf");
+}
+@font-face {
+  font-family: SourceSerif-Bold;
+  src: url("fonts/Source_SErif_PRo/SourceSerifPro-Bold.ttf");
+}
+@font-face {
+  font-family: SourceSerif-Regular;
+  src: url("fonts/Source_SErif_PRo/SourceSerifPro-Regular.ttf");
+}

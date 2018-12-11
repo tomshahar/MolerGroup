@@ -1,0 +1,239 @@
+@import "palette.css";
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.nav-btn[href="research.html"] {
+  color: var(--cardinal-red);
+}
+h4 {
+  margin: 0;
+  font-family: Source-Bold;
+  font-size: 3.2rem;
+}
+p {
+  font-family: Source-Regular;
+  margin: 0;
+  color: black;
+}
+h1 {
+}
+h2 {
+  margin-bottom: 0;
+  font-family: Source-Bold;
+  font-size: 3.2rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+}
+h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-family: Source-Regular;
+  color: black;
+
+}
+p {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+h5 {
+  font-size: 1.3rem;
+  font-family: Source-Regular;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: black;
+
+}
+h6 {
+  font-size: 1.3rem;
+  font-family: Source-Regular;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.res-intro-header {
+  margin-top: 18vh;
+
+}
+.res-intro-subheader {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50vw;
+  line-height: 1.5;
+  font-family: Source-Regular;
+  margin-top: 3vh;
+
+
+
+}
+.res-images-container {
+  display: flex;
+  width: 60vw;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+.res-images-container img {
+  margin-bottom: 5vh;
+}
+.res-banner {
+  margin-top: 10vh;
+  width: 96vw;
+  height: 50vh;
+}
+.res-MMT {
+  background-color: var(--fog);
+  margin-top: 2vw;
+  padding: 5vh 0 10vh;
+
+}
+.res-MMT p {
+  width: 60vw;
+  text-align: center;
+}
+.res-projects-section {
+  padding-top: 5vh;
+  background-color: var(--chocolate);
+  color: white;
+  padding-bottom: 10vh;
+
+}
+.res-projects-container {
+  margin-top: 5vh;
+  padding-left: 5vw;
+  overflow: auto;
+  white-space: nowrap;
+  padding-right: 30vw;
+  padding-bottom: 5vh;
+
+
+}
+
+
+.res-project-wrapper {
+  display: inline-block;
+  background-color: white;
+  min-height: 80vh;
+  width: 58vw;
+  margin-top: 5vh;
+  margin-left: 15vw;
+  margin-bottom: 5vh;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+  background-color: white;
+  vertical-align: top;
+  padding-left: 5vw;
+  color: black;
+  transition: 0.3s;
+
+
+}
+.res-project-image {
+  position: absolute;
+  right: -3vw;
+  top: 3vh;
+  background-color: var(--stone);
+  height: 40%;
+  width: 40%;
+  box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+
+}
+.res-project-wrapper h3 {
+  font-size: 1.3rem;
+  margin-top: 7vh;
+  font-family: Source-SemiBold;
+  width: 55%;
+  white-space: normal;
+
+
+}
+.res-project-wrapper h5 {
+  margin-top: 3vh;
+  font-family: Source-SemiBold;
+  width: 55%;
+  white-space: normal;
+
+
+
+}
+.res-project-wrapper p {
+  width: 55%;
+  white-space: normal;
+  line-height: 1.5;
+  margin: 1.5vh 0;
+
+
+}
+
+.res-project-wrapper a {
+  color: var(--link);
+  font-size: 1.1rem;
+  font-family: Source-SemiBold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.res-project-wrapper a span {
+  color: black;
+  font-family: Source-RegularItalic;
+}
+.res-project-wrapper a::after {
+  content: "\2303";
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-left: -0.2vw;
+  font-family: Source-Light;
+  transition: 0.25s ease;
+}
+.res-project-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.res-project-wrapper a:hover::after {
+  margin-left: 0.1vw;
+}
+.res-project-wrapper p.res-project-more-links {
+  margin-top: 3vh;
+  margin-bottom: 7vh;
+
+}
+.res-hidden-text-1, .res-hidden-text-2 {
+  display: none;
+  color: black;
+}
+.res-hidden-text-close {
+  font-size: 2rem;
+  font-family: Source-Light;
+  position: absolute;
+  right: 2vw;
+  top: 2vh;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.res-hidden-text-close:hover {
+  color: var(--link-hover);
+}
+@media screen and (max-width: 800px) {
+  .publication-wrapper {
+    width: 80vw;
+    margin-top: 3vh;
+  }
+  h1 {
+  }
+  h2 {
+    font-size: 3rem;
+    margin-top: 5vh;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .res-intro-subheader {
+    font-size: 1.3rem;
+    width: 90vw;
+  }
+}

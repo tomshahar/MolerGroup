@@ -1,0 +1,97 @@
+@import "palette.css";
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.nav-btn[href="people.html"] {
+  color: var(--cardinal-red);
+}
+
+h4 {
+  margin: 0;
+  font-family: Source-SemiBold;
+}
+p {
+  font-family: Source-Regular;
+  margin: 0;
+}
+h1 {
+}
+h2 {
+  margin-bottom: 0;
+  font-family: Source-Bold;
+  font-size: 3rem;
+
+}
+h3 {
+  color: var(--bright-red);
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.7rem;
+
+
+}
+p {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+h5 {
+  font-size: 1.3rem;
+  font-family: Source-Regular;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+
+}
+.person-buttons-container {
+  display: inline-block;
+}
+#people-vue-app {
+  height: 100%;
+  margin-top: 15vh;
+}
+.people-section-container {
+  display: inline-block;
+  margin-left: 4vw;
+}
+.people-section-inner {
+  margin-top: 8vh;
+
+}
+.person-wrapper-inner {
+  width: 60vw;
+  margin-top: 4vh;
+}
+.person-right {
+  display: inline-block;
+  float: right;
+
+}
+.person-left {
+  display: inline-block;
+
+}
+.person-image {
+  width: 15vw;
+  height: 30vh;
+  background-color: rgba(0,0,0,0.3);
+}
+.people-links-inner {
+  flex-direction: column;
+  position: absolute;
+  top: 23vh;
+  right: 4vw;
+  text-align: right;
+  background-color: var(--fog);
+  padding: 1.5vh 0 2vh 0;
+}
+.people-link {
+  display: block;
+  margin: 1vh 2vw;
+  color: var(--stone);
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.5rem;
+
+}

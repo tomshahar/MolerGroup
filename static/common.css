@@ -1,0 +1,212 @@
+@import "palette.css";
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Source-Regular;
+  font-size: 2vh;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.main-btn {
+  background-color: var(--bright-red);
+  padding: calc(1.4vh - 2px) 5vw calc(1.65vh - 2px);
+  box-shadow: 0 0 10px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  color: white;
+  border: solid 2px var(--bright-red);
+
+}
+.main-btn:hover {
+  background-color: var(--hover-red);
+  border-color: var(--hover-red);
+}
+/*
+
+=   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =
+
+                            HEADER
+
+=   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =   =
+
+*/
+.header {
+  position:absolute;
+  top: 0;
+  height: 12vh;
+  width: 100vw;
+
+}
+.logo--wrapper {
+  overflow: hidden;
+}
+.logo--wrapper:hover {
+  cursor: pointer;
+}
+.nav-btn--container {
+  height: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 2vw;
+  overflow: hidden;
+}
+.nav-btn {
+  padding: 1.5vh 0vw;
+  margin: 1vh 1.5vw;
+  font-family: Source-Regular;
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+.nav-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  height: 3px;
+  background-color: var(--bright-red);
+  width: 100%;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+.nav-btn:hover {
+  color: var(--bright-red);
+}
+.nav-btn:hover::before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+.nav-btn:focus::before {
+  bottom: 0px;
+}
+.logo--wrapper {
+  font-family: SourceSerif-Regular;
+  display: inline-flex;
+  align-items: center;
+  color: var(--stone);
+  padding: 2vh 2vw;
+  font-size: 4rem;
+}
+.logo--wrapper span {
+  margin-left: 1vw;
+  font-family: SourceSerif-Bold;
+  color: var(--cardinal-red);
+  letter-spacing: -0.1vw;
+}
+.logo--svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+.logo--svg svg {
+  height: 100%;
+  width: 100%;
+}
+/*
+HEADER SCROLL
+*/
+.header-scroll {
+  display: none;
+  background-color: var(--bright-red);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  box-shadow: 0 0 10px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1);
+}
+.nav-btn--container-scroll {
+  display: inline-flex;
+  float: right;
+}
+.nav-btn-scroll {
+  padding: 1.5vh 2vw;
+  font-family: Source-Light;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+
+}
+.nav-btn-scroll:hover {
+  background-color: var(--hover-red);
+}
+.logo--wrapper-scroll {
+  font-family: SourceSerif-Regular;
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  padding: 1vh 1vw 1vh;
+  font-size: 1.5rem;
+  transition: 0.3s;
+
+}
+.logo--wrapper-scroll:hover {
+  cursor: pointer;
+  background-color: var(--hover-red);
+}
+
+.logo--wrapper-scroll span {
+  margin-left: 0.5vw;
+  margin-right: 0.25vw;
+  font-family: SourceSerif-Regular;
+  color: white;
+  letter-spacing: -0.1vw;
+}
+.logo--svg-scroll {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  transform: translateY(-0.18vh);
+}
+.logo--svg-scroll svg {
+  height: 100%;
+  width: 100%;
+  fill: white;
+}
+/*
+
+*
+
+Responsivity
+
+*
+
+*/
+.desktop-flex {
+  display: flex;
+}
+.desktop-block {
+  display: block;
+}
+.mobile-flex, .mobile-block {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .html, body {
+    font-size: 12px;
+  }
+  .mobile-flex  {
+    display: flex;
+  }
+  .mobile-block  {
+    display: flex;
+  }
+  .desktop-flex, .desktop-block {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .nav-btn-scroll {
+    font-family: Source-Regular;
+  }
+
+}
